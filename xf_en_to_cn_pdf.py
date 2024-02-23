@@ -13,6 +13,7 @@ from email.utils import format_datetime
 from datetime import datetime, timezone
 from wsgiref.handlers import format_date_time
 
+start_time = time.time()
 APPId = "yourid"
 APISecret = "your secret"
 APIKey = "your key"
@@ -155,4 +156,7 @@ with open(pdf_path, "rb") as file:
 with open(output_text_file, "w", encoding="utf-8") as output_file:
     output_file.write(translated_text)
 
-print("翻译完成，并已生成新文件:", output_text_file)
+end_time = time.time()
+elapsed_time = end_time - start_time
+print("翻译完成，并已生成新文件 tranemployers.txt")
+print("翻译耗时:", elapsed_time, "秒")
