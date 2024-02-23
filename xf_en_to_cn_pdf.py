@@ -1,3 +1,8 @@
+"""  
+How to translate a large English PDF file into Chinese
+Author: 码上转型（微信公众号） 
+Date: 2024-02-23  
+"""
 import json
 import base64
 import hashlib
