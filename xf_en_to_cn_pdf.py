@@ -13,8 +13,6 @@ from email.utils import format_datetime
 from datetime import datetime, timezone
 from wsgiref.handlers import format_date_time
 
-start_time = time.time()
-
 APPId = "yourid"
 APISecret = "your secret"
 APIKey = "your key"
@@ -140,7 +138,7 @@ def split_text_into_chunks(text, chunk_size=4500):
 
 # 读取PDF文件
 pdf_path = "your source pdf file path x.pdf"
-output_text_file = "destionation file x.txt"
+output_text_file = "destionation file y.txt"
 
 with open(pdf_path, "rb") as file:
     pdf_reader = PdfReader(file)
